@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prestamos>
+    <prestamo>
+        <persona dni="a">
+            <nombre>a</nombre>
+            <apellidos>a</apellidos>
+            <dirrecion>a</dirrecion>
+            <fechaNac>2023-10-12</fechaNac>
+            <numPrestamos>1</numPrestamos>
+        </persona>
+        <fecha>2023-10-26</fecha>
+    </prestamo>
+</prestamos>

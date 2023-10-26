@@ -1,0 +1,4 @@
+1_Título1_Editorial1_Autor1_5
+2_Título2_Editorial2_Autor2_5
+3_Título3_Editorial3_Autor3_5
+4_Título4_Editorial4_Autor4_5

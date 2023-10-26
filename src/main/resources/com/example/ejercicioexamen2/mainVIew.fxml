@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejercicioexamen2.controller.mainController">
+   <children>
+      <ButtonBar layoutX="89.0" layoutY="16.0" prefHeight="40.0" prefWidth="252.0">
+        <buttons>
+            <DatePicker fx:id="datePicker" />
+          <Button fx:id="bt_fecha" minWidth="57.0" mnemonicParsing="false" onAction="#guadarFecha" prefHeight="28.0" text="Guardar" />
+        </buttons>
+      </ButtonBar>
+      <Label fx:id="lb_app" layoutX="29.0" layoutY="27.0" text="Label" />
+      <Label fx:id="lb_nombre" layoutX="352.0" layoutY="27.0" text="Label" />
+      <TextField fx:id="tf_dni" layoutX="29.0" layoutY="83.0" promptText="DNI" />
+      <TextField fx:id="tf_nombreUser" layoutX="29.0" layoutY="125.0" promptText="Nombre" />
+      <TextField fx:id="tf_apellido" layoutX="29.0" layoutY="163.0" promptText="Apellido" />
+      <TextField fx:id="tf_direccion" layoutX="29.0" layoutY="249.0" promptText="Direccion" />
+      <ComboBox fx:id="cb_libros" layoutX="260.0" layoutY="83.0" onAction="#cargarInfoLibro" prefWidth="150.0" promptText="----" />
+      <Label fx:id="lb_nombreLibro" layoutX="260.0" layoutY="129.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="lb_stockLibro" layoutX="260.0" layoutY="209.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="lb_autorLibro" layoutX="260.0" layoutY="167.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label fx:id="lb_editorialLibro" layoutX="260.0" layoutY="142.0" prefHeight="17.0" prefWidth="150.0" />
+      <Button fx:id="bt_xml" layoutX="89.0" layoutY="348.0" mnemonicParsing="false" onAction="#guardarPrestamosXML" prefHeight="25.0" prefWidth="62.0" text="XML" />
+      <Button fx:id="bt_json" layoutX="184.0" layoutY="348.0" mnemonicParsing="false" onAction="#mostrarAlertaPrestamosJSON" prefHeight="25.0" prefWidth="62.0" text="JSON" />
+      <Button fx:id="bt_prestamo" layoutX="160.0" layoutY="295.0" mnemonicParsing="false" onAction="#realizarPrestamo" text="Realizar préstamo" />
+      <DatePicker fx:id="datePicker_fechaNac" layoutX="29.0" layoutY="205.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button fx:id="bt_Binario" layoutX="290.0" layoutY="348.0" mnemonicParsing="false" onAction="#guardarPrestamosBinario" prefHeight="25.0" prefWidth="62.0" text="Binario" />
+      <Button fx:id="bt_aplazar" layoutX="280.0" layoutY="249.0" mnemonicParsing="false" onAction="#aplazar15Dias" prefHeight="25.0" prefWidth="111.0" text="Aplazar 15 días" />
+   </children>
+</AnchorPane>
